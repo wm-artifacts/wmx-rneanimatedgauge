@@ -1,0 +1,151 @@
+{
+  "name": "RNEAnimatedGauge",
+  "version": "1.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wavemaker/wm-react-native-echarts"
+  },
+  "homepage": "https://wavemaker.github.io/wm-react-native-echarts/?path=/story/charts-gauge-digital--default",
+  "displayName": "Animated Gauge",
+  "description": "Animated gauge chart with smooth value transitions and gradient tick marks using SVG",
+  "iconUrl": "icon.svg",
+  "component": "animated-gauge.chart.tsx",
+  "requires": [
+    "../../chart-container.tsx",
+    "../../chart-theme.context.tsx"
+  ],
+  "dependencies": {
+    "@wavemaker/react-native-echarts": "1.0.1",
+    "@shopify/react-native-skia": "2.6.2"
+  },
+  "keywords": [
+    "gauge",
+    "chart",
+    "animated",
+    "svg",
+    "gradient",
+    "smooth",
+    "visualization",
+    "transition",
+    "custom",
+    "chart/gauge"
+  ],
+  "props": {
+    "value": {
+      "name": "value",
+      "displayName": "Value",
+      "description": "Current value to display. Example: 75",
+      "type": "number",
+      "isList": false,
+      "isRequired": true
+    },
+    "min": {
+      "name": "min",
+      "displayName": "Min",
+      "description": "Minimum value of the gauge scale. Example: 0",
+      "type": "number",
+      "isList": false,
+      "defaultValue": 0,
+      "isRequired": false
+    },
+    "max": {
+      "name": "max",
+      "displayName": "Max",
+      "description": "Maximum value of the gauge scale. Example: 100",
+      "type": "number",
+      "isList": false,
+      "defaultValue": 100,
+      "isRequired": false
+    },
+    "width": {
+      "name": "width",
+      "displayName": "Width",
+      "description": "Width of the chart in pixels.",
+      "type": "string",
+      "pattern": "^\\d+(%|px|pt)?$",
+      "defaultValue": "100%",
+      "isList": false,
+      "isRequired": false
+    },
+    "height": {
+      "name": "height",
+      "displayName": "Height",
+      "description": "Height of the chart in pixels.",
+      "type": "string",
+      "pattern": "^\\d+(%|px|pt)?$",
+      "defaultValue": "300",
+      "isList": false,
+      "isRequired": false
+    },
+    "theme": {
+      "name": "theme",
+      "displayName": "Theme",
+      "description": "Partial theme override for customizing chart appearance. Example: {series: [{color: '#3b82f6'}]}",
+      "type": "object",
+      "isList": false,
+      "isRequired": false,
+      "show": false
+    },
+    "colors": {
+      "name": "colors",
+      "displayName": "Colors",
+      "description": "Colors for the chart. Example: ['#3b82f6', '#10b981', '#f59e0b']",
+      "type": "string",
+      "isList": true,
+      "isRequired": false
+    },
+    "axisBgColor": {
+      "name": "axisBgColor",
+      "displayName": "Axis Background Color",
+      "description": "Background color for the gauge axis/track arc. Example: '#e5e7eb'",
+      "type": "string",
+      "isList": false,
+      "isRequired": false
+    },
+    "axisWidth": {
+      "name": "axisWidth",
+      "displayName": "Axis Width",
+      "description": "Width of the axis line in pixels.",
+      "type": "number",
+      "isList": false,
+      "isRequired": false
+    },
+    "tickColor": {
+      "name": "tickColor",
+      "displayName": "Tick Color",
+      "description": "Color for tick marks and split lines. Example: '#9ca3af'",
+      "type": "string",
+      "isList": false,
+      "isRequired": false
+    },
+    "showInnerArc": {
+      "name": "showInnerArc",
+      "displayName": "Show Inner Arc",
+      "description": "Whether to render the inner decorative arc. Default: false",
+      "type": "boolean",
+      "isList": false,
+      "defaultValue": false,
+      "isRequired": false
+    },
+    "animationDuration": {
+      "name": "animationDuration",
+      "displayName": "Animation Duration",
+      "description": "Duration of the value animation in milliseconds. Default: 1000",
+      "type": "number",
+      "isList": false,
+      "defaultValue": 1000,
+      "isRequired": false
+    }
+  },
+  "group": "chart/gauge",
+  "marketplace": {
+    "carouselImages": [
+      "/assets/images/digital.png"
+    ],
+    "thumbnailImage": "/assets/images/thumbnail.png",
+    "icon": "icon.svg",
+    "previewUrl": "https://wavemaker.github.io/wm-react-native-echarts/?path=/story/charts-gauge-digital--default"
+  },
+  "webSupport": true
+}
